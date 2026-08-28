@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a,b, area, perm ;
+    printf ("Enter the length: ");
+    scanf("%d", &a);
+    printf ("Enter the breadth:");
+    scanf ("%d", &b);
+     
+    area = a * b ;
+    printf("Area of %d and %d is %d", a , b , area);
+
+    perm = 2*(a + b );
+    printf("\nPerm of %d and %d is %d", a , b , perm);
+
+}
