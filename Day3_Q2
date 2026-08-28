@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c ;
+    printf ("Enter the 1st no: ");
+    scanf("%d", &a);
+    printf ("Enter the 2nd no:");
+    scanf ("%d", &b);
+     
+    c = a ;
+    a = b ;
+    b = c ;
+
+    printf("\nThe value of 1st no is %d", a);
+    printf("\nThe value of 2nd no is %d", b);
+
+}
