@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,sum, diff, product , div ;
+    printf ("Enter the 1st no: ");
+    scanf("%d", &a);
+    printf ("Enter the 2nd no: ");
+    scanf ("%d", &b);
+
+    sum = a + b;
+    printf("Sum of %d and %d is %d ", a , b ,sum);
+    diff = a - b;
+    printf("\nDiff of %d and %d is %d", a , b , diff);
+    product = a * b;
+    printf("\nProd of %d and %d is %d", a ,b ,product);
+    b != 0 ? printf("\nDiv of %d and %d is %d", a, b, a / b)
+       : printf("\nDivision by zero is not possible");
+    return 0;
+}
