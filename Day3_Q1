@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float cel, fah;
+    printf ("Enter the temp in degree cel: ");
+    scanf("%f", &cel);
+
+    fah = 9/5 *(cel+32);
+    printf("Temp in degree cel %.1f is %.1f in degree fah" , cel , fah);
+}
