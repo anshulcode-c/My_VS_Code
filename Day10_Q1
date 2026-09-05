@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter the 1st angle: ");
+    scanf("%d", &a);
+
+    printf("Enter the 2nd angle: ");
+    scanf("%d", &b);
+
+    printf("Enter the 3rd angle: ");
+    scanf("%d", &c);
+
+    if (a + b + c == 180)
+    {
+        if (a > 0)
+        {
+            if (b > 0)
+            {
+                if (c > 0)
+                {
+                    if (a < 90)
+                    {
+                        if (b < 90)
+                        {
+                            if (c < 90)
+                            {
+                                printf("The triangle is acute-angled.");
+                            }
+                            else
+                            {
+                                printf("The triangle is obtuse-angled.");
+                            }
+                        }
+                        else
+                        {
+                            if (b == 90)
+                            {
+                                printf("The triangle is right-angled.");
+                            }
+                            else
+                            {
+                                printf("The triangle is obtuse-angled.");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (a == 90)
+                        {
+                            printf("The triangle is right-angled.");
+                        }
+                        else
+                        {
+                            printf("The triangle is obtuse-angled.");
+                        }
+                    }
+                }
+                else
+                {
+                    printf("Invalid triangle.");
+                }
+            }
+            else
+            {
+                printf("Invalid triangle.");
+            }
+        }
+        else
+        {
+            printf("Invalid triangle.");
+        }
+    }
+    else
+    {
+        printf("Invalid triangle.");
+    }
+
+    return 0;
+}
